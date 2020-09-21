@@ -1,0 +1,63 @@
+.professor_div {
+    width: 20% ;
+    margin: 5px;
+    text-align: center;
+    border: 2px solid rgba(17, 5, 127, 0.95);
+    display: inline-block;
+    background-color: #5f45f3;
+    padding: 10px;
+    color: white;
+    min-width: 250px;
+    border-radius: 5px;
+}
+
+.prof_image{
+    width: 50%;
+    height: 50%;
+    border-radius: 100% ;
+}
+
+.main_div {
+    text-align: center;
+    width: 80% ;
+    margin: 100px auto;
+}
+
+.video_div {
+    color: white;
+    width: 40% ;
+    text-align: center;
+    margin: 10px 10px;
+    border: 2px solid #5f45f3;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #5f45f3;
+    display: inline-block;
+}
+
+.video_title{
+    width: 100%;
+    background-color: #5f45f3;
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+#download-btn{
+    margin: 5px 0;
+}
+
+#session{
+    margin-bottom: 20px;
+    color: #ffd409;
+}
+
+#topic{
+    margin-bottom: 20px;
+}
+
+.return{
+    margin: 50px;
+    text-align: center;
+}

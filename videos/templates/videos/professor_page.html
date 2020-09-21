@@ -1,0 +1,22 @@
+{% extends 'videos/layout.html' %}
+
+{% block content %}
+    <title>{{ professor.name }}</title>
+    <div class="video_title">
+        <h2>{{ professor.course_name }}</h2>
+        <h4>{{ professor.name }}</h4>
+    </div>
+    <div class="main_div">
+        {% for video in videos %}
+            <div class="video_div">
+                <h4 id="session"> جلسه&nbsp;{{ video.session }}</h4>
+                <h6 id="topic"> مبحث: {{ video.topic }}</h6>
+                <h6 class="alert alert-warning"> توضیحات:&nbsp;{{ video.notes }}</h6>
+                <a class="btn btn-warning" id="download-btn" href="{{ video.link }}" target="_blank">دانلود ویدیو</a>
+            </div>
+        {% endfor %}
+        <div class="return">
+            <a class="btn btn-outline-primary" href="{% url 'home' %}">بازگشت به صفحه اصلی</a>
+        </div>
+    </div>
+{% endblock %}

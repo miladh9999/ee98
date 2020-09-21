@@ -1,0 +1,17 @@
+{% extends 'videos/layout.html' %}
+
+{% block content %}
+    <title>صفحه اصلی</title>
+    <div class="main_div">
+        {% for professor in professors %}
+            <div class="professor_div">
+                {% if professor.image %}
+                    <img class="prof_image" src="{{ professor.image.url }}" alt="cute picture of {{ professor.name }}">
+                {% endif %}
+                <h3>{{ professor.name }}</h3>
+                <h6>{{ professor.course_name }}</h6>
+                <a class='btn btn-warning' href="{% url 'professor_page' professor.id %}">ویدیو ها</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
